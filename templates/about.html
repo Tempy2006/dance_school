@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block title %}Chi siamo{% endblock %}
+{% block content %}<p class="eyebrow">LA NOSTRA SCUOLA</p><h1>Chi siamo</h1>
+<p>Dance School organizza corsi di danza classica, moderna e hip hop. La scuola ha una sede principale e due succursali a Milano.</p>
+<h2>Contatti</h2><p>Sede principale: Via della Danza 10, 20100 Milano (MI), Italia.<br>Telefono: 02 0000000<br>Email: info@danceschool.example<br>Segreteria: lunedì–venerdì, 15:00–20:00.</p>
+<a href="{% url 'schoolmanagement:school_list' %}">Scopri tutte le sedi</a>{% endblock %}

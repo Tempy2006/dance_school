@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}{{ object }}{% endblock %}
+{% block content %}<h1>{{ object }}</h1><dl><dt>Nome</dt><dd>{{ object.name }}</dd><dt>Indirizzo</dt><dd>{{ object.street }}</dd><dt>Città</dt><dd>{{ object.city }}</dd><dt>Provincia</dt><dd>{{ object.province }}</dd><dt>CAP</dt><dd>{{ object.zip }}</dd><dt>Paese</dt><dd>{{ object.country }}</dd><dt>Sito web</dt><dd>{{ object.website }}</dd><dt>Telefono</dt><dd>{{ object.phone }}</dd><dt>Email</dt><dd>{{ object.email }}</dd><dt>Partita IVA</dt><dd>{{ object.vat }}</dd></dl><a href="{% url 'schoolmanagement:school_list' %}">Torna alla lista</a>{% endblock %}

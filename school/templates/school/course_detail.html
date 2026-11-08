@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}{{ object }}{% endblock %}
+{% block content %}<h1>{{ object }}</h1><dl><dt>Materia</dt><dd>{{ object.subject }}</dd><dt>Giorno</dt><dd>{{ object.day_of_the_week }}</dd><dt>Ora</dt><dd>{{ object.starting_hour |time:"H:i" }}</dd><dt>Aula</dt><dd>{{ object.classroom }}</dd><dt>Sede</dt><dd>{{ object.school }}</dd></dl><a href="{% url 'school:course_list' %}">Torna alla lista</a>{% endblock %}

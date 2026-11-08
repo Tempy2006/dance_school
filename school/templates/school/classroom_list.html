@@ -1,0 +1,5 @@
+{% extends 'base_list.html' %}
+{% block title %}Aule{% endblock %}
+{% block heading %}Aule{% endblock %}
+{% block list-header %}<th scope="col">Nome</th><th scope="col">Capienza</th>{% endblock %}
+{% block list-body %}{% for object in object_list %}<tr><td><a href="{% url 'school:classroom_detail' object.pk %}">{{ object.name }}</a></td><td>{{ object.capacity }}</td></tr>{% empty %}<tr><td colspan="2">Nessun elemento presente.</td></tr>{% endfor %}{% endblock %}

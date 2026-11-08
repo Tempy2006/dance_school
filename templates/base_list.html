@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}<h1>{% block heading %}{% endblock %}</h1>
+<div class="table-responsive"><table class="table table-striped table-hover align-middle">
+<thead><tr>{% block list-header %}{% endblock %}</tr></thead>
+<tbody>{% block list-body %}{% endblock %}</tbody></table></div>{% endblock %}

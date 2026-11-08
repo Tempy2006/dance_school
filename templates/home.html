@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<p class="eyebrow">MOVIMENTO · PASSIONE · INSIEME</p><h1>Benvenuti alla Dance School</h1>
+<div id="schoolCarousel" class="carousel slide my-4" data-bs-ride="carousel">
+<div class="carousel-inner">
+<article class="carousel-item active"><div class="hero"><p>01 / DANZA CLASSICA</p><h2>Danza classica</h2><p>Lezioni di danza classica per principianti e allievi con esperienza.</p></div></article>
+<article class="carousel-item"><div class="hero hero-two"><p>02 / DANZA MODERNA</p><h2>Danza moderna</h2><p>Corsi di danza moderna con esercizi e coreografie di gruppo.</p></div></article>
+<article class="carousel-item"><div class="hero hero-three"><p>03 / HIP HOP</p><h2>Hip hop</h2><p>Musica, gruppo e nuove coreografie.</p></div></article>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Precedente</span></button>
+<button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Successivo</span></button>
+</div>
+<section><h2>I nostri corsi</h2><p>Accogliamo principianti e appassionati con corsi di danza classica, moderna e hip hop. Scopri le nostre sedi e gli orari dei corsi.</p><a class="btn btn-primary" href="{% url 'school:course_list' %}">Esplora i corsi</a></section>
+{% endblock %}
